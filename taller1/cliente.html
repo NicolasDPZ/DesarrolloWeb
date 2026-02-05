@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!--menu-->
+    <div id="menu">
+        <h2>
+            Menu del dia
+        </h2>
+    </div>
+
+    <p id="menu">Sopas</p>
+    <table border="2" id="tablas">
+        <tr>
+            <td>caldo de pollo</td>
+            <td><img src="imagenes/caldo.jpeg"></td>
+            <td>Caldo de pollo con papa y mucho cilantro</td>
+            <td>$10.000</td>
+        </tr>
+        <tr>
+            <td>sopa de pasta</td>
+            <td><img src="imagenes/sopa.jpeg"></td>
+            <td>sopa de pasta con vegetales y pan</td>
+            <td>$20.000</td>
+        </tr>
+        <tr>
+            <td>changua</td>
+            <td><img src="imagenes/changua.jpeg"></td>
+            <td>Tradicional changua santafereña</td>
+            <td>$18.000</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <p id="menu">Platos Fuertes</p>
+    <table border="2" id="tablas">
+        <tr>
+            <td>Pollo</td>
+            <td><img src="imagenes/pollo.jpeg"></td>
+            <td> Pollo agridulce con papas y ensalda</td>
+            <td>$20.000</td>
+        </tr>
+        <tr>
+            <td>Carne</td>
+            <td><img src="imagenes/carne.jpeg"></td>
+            <td> Chuleta con salsa de la casa y papas</td>
+            <td>$15.000</td>
+        </tr>
+        <tr>
+            <td>Camarones</td>
+            <td><img src="imagenes/camaron.jpeg"></td>
+            <td> Camarones con salsa de la casa y arroz de coco</td>
+            <td>$25.000</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <p id="menu">Postres</p>
+    <table border="2" id="tablas">
+        <tr>
+            <td>Flan</td>
+            <td><img src="imagenes/flan.jpeg"></td>
+            <td>Flan de huevo con caramelo</td>
+            <td>$10.000</td>
+        </tr>
+        <tr>
+            <td>tarta</td>
+            <td><img src="imagenes/cake.jpeg"></td>
+            <td>Tarta de frutas con crema</td>
+            <td>$12.000</td>
+        </tr>
+        <tr>
+            <td>pastel de chocolate</td>
+            <td><img src="imagenes/chocolate.jpeg"></td>
+            <td>Pastel de chocolate con crema </td>
+            <td>$8.000</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+
+    <!--orden de pedido con la seleccion del pedido y la cantidad-->
+    <div id="orden">
+        <p id="ordenTexto"> ¿Que desea ordenar?</p>
+        <br>
+
+        <label >
+            <input type="checkbox" id="checkboxxx">
+            Caldo de pollo
+            <input type="number" min="0" value="0" id="caldo">
+        </label><br>
+
+        <label >
+            <input type="checkbox" id="checkboxxx">
+            Sopa de pasta
+            <input type="number" min="0" value="0" id="sopa">
+        </label><br>
+
+        <label >
+            <input type="checkbox" id="checkboxxx">
+            Changua
+            <input type="number" min="0" value="0" id="changua">
+        </label><br>
+
+        <label >
+            <input type="checkbox" id="checkboxxx">
+            Pollo
+            <input type="number" min="0" value="0" id="pollo">
+        </label><br>
+
+        <label >
+            <input type="checkbox" id="checkboxxx">
+            Carne
+            <input type="number" min="0" value="0" id="carne">
+        </label><br>
+
+        <label >
+            <input type="checkbox" id="checkboxxx">
+            Camarones
+            <input type="number" min="0" value="0" id="camarones">
+        </label><br>
+
+        <label >
+            <input type="checkbox" id="checkboxxx">
+            Flan
+            <input type="number" min="0" value="0" id="flan">
+        </label><br>
+
+        <label >
+            <input type="checkbox" id="checkboxxx">
+            Tarta
+            <input type="number" min="0" value="0" id="tarta">
+        </label><br>
+
+        <label >
+            <input type="checkbox" id="checkboxxx">
+            Pastel de chocolate
+            <input type="number" min="0" value="0" id="pastel">
+        </label><br>
+
+ <!--boton para validar la compra-->
+        <br>
+        <input type="submit" value="Enviar" id ="botonEnviar">
+        <br>
+        <br>
+        <br>
+        <br>
+ <!--total de la compra-->
+        <h2 id="ordenTexto"> Total a pagar: </h2>
+        <p id="ordenTexto">$25000</p>
+    </div>
+    <br>
+    <br>
+
+ <!--volver-->
+
+    <a href="file:///home/nicolas/Documentos/Talleres/Web/Restaurante.html">volver</a>
+
+</body>
+
+</html>
