@@ -5,17 +5,87 @@
 
 <head>
     <meta charset="UTF-8">
-    <!--llamado a los estilos con css-->
     <link rel="stylesheet" href="css/estilosMesero.css">
+    <title>Mesero</title>
 </head>
 
 <body>
-    <div id="Mesero">
-        <h1>Mesero</h1>
-        <br>
-        <!--volver-->
-        <a href="Restaurante.html">volver</a>
-    </div>
-</body>
 
+<div id="Mesero">
+
+    <h1 id="title">Mesero</h1>
+
+    <div id="orden">
+
+        <h2>¿Qué desea ordenar?</h2>
+
+        <div class="fila-plato">
+            <input type="checkbox" data-id="1">
+            <span>Caldo de pollo</span>
+            <input type="number" min="0" value="0">
+        </div>
+
+        <div class="fila-plato">
+            <input type="checkbox" data-id="2">
+            <span>Sopa de pasta</span>
+            <input type="number" min="0" value="0">
+        </div>
+
+        <div class="fila-plato">
+            <input type="checkbox" data-id="3">
+            <span>Changua</span>
+            <input type="number" min="0" value="0">
+        </div>
+
+        <div class="fila-plato">
+            <input type="checkbox" data-id="4">
+            <span>Pollo agridulce</span>
+            <input type="number" min="0" value="0">
+        </div>
+
+        <div class="fila-plato">
+            <input type="checkbox" data-id="5">
+            <span>Chuleta</span>
+            <input type="number" min="0" value="0">
+        </div>
+
+        <div class="fila-plato">
+            <input type="checkbox" data-id="6">
+            <span>Camarones</span>
+            <input type="number" min="0" value="0">
+        </div>
+
+        <div class="fila-plato">
+            <input type="checkbox" data-id="7">
+            <span>Flan</span>
+            <input type="number" min="0" value="0">
+        </div>
+
+        <div class="fila-plato">
+            <input type="checkbox" data-id="8">
+            <span>Tarta de frutas</span>
+            <input type="number" min="0" value="0">
+        </div>
+
+        <div class="fila-plato">
+            <input type="checkbox" data-id="9">
+            <span>Pastel de chocolate</span>
+            <input type="number" min="0" value="0">
+        </div>
+
+        <br>
+
+        <button id="botonEnviar">Calcular pedido</button>
+
+        <p>Total a pagar: $<span id="total">0</span></p>
+
+    </div>
+
+    <a href="Restaurante.html">Volver</a>
+
+</div>
+
+<script src="js/funcionesMesero.js"></script>
+
+</body>
 </html>

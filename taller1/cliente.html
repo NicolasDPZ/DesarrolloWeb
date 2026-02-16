@@ -1,200 +1,50 @@
-<!--Pagina para el cliente-->
-
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <!--llamado a los estilos con css-->
     <link rel="stylesheet" href="css/estilosCliente.css">
+    <title>Cliente - Restaurante</title>
 </head>
 
 <body>
-    <!--menu-->
-    <div id="menu">
-        <h2>
-            Menú del día
-        </h2>
-    </div>
-    <!--busqueda para el cliente-->
-    <div id ="busqueda">
 
-        <p> Desea buscar en el menu</p>
-        <input type="text" id="buscarNombre" placeholder="Buscar el nombre del plato" class="buscar"/>
-        
-        <select id="buscarCategoria" class="buscar">
-            <option value="">Buscar por categoría</option>
-            <option value="sopas">Sopas</option>
-            <option value="platosFuertes">Platos Fuertes</option>
-            <option value="postres">Postres</option>
-            <option value="todas">Todas las categorías</option>
-        </select>
-        
-        <button id="buscarBtn" class="buscar">Buscar</button>
+    <div id="menuPrincipal">
+        <h2>Menú del día</h2>
     </div>
+
+    <!-- BUSQUEDA -->
+    <div id="busqueda">
+        <p>Desea buscar en el menú</p>
+
+        <input type="text" id="buscarNombre" placeholder="Buscar el nombre del plato" />
+
+        <select id="buscarCategoria">
+            <option value="">Buscar por categoría</option>
+            <option value="entrada">Sopas</option>
+            <option value="plato fuerte">Platos Fuertes</option>
+            <option value="postre">Postres</option>
+        </select>
+
+        <button id="buscarBtn">Buscar</button>
+    </div>
+
 
     <div id="resultadosMenu"></div>
+
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+
+    <div id="reserva">
+        <h2>¿Desea reservar una mesa?</h2>
+    <a href="reservas.html">Reservar con nosotros</a>
     </div>
 
-
-    <p id="menu">Sopas</p>
-    <!--Tabla para representar el menu de las sopas-->
-    <table id="tablas">
-        <tr>
-            <td id="le">caldo de pollo</td>
-            <td><img src="imagenes/caldo.jpeg"></td>
-            <td>Caldo de pollo con papa y mucho cilantro</td>
-            <td>$10.000</td>
-        </tr>
-        <tr>
-            <td id="le">sopa de pasta</td>
-            <td><img src="imagenes/sopa.jpeg"></td>
-            <td>sopa de pasta con vegetales y pan</td>
-            <td>$20.000</td>
-        </tr>
-        <tr>
-            <td id="le">changua</td>
-            <td><img src="imagenes/changua.jpeg"></td>
-            <td>Tradicional changua santafereña</td>
-            <td>$18.000</td>
-        </tr>
-    </table>
-
-    <br>
-    <br>
-
-    <p id="menu">Platos Fuertes</p>
-    <!--Tabla para representar el menu de los platos fuertes-->
-    <table id="tablas">
-        <tr>
-            <td id="le">Pollo</td>
-            <td><img src="imagenes/pollo.jpeg"></td>
-            <td> Pollo agridulce con papas y ensalda</td>
-            <td>$20.000</td>
-        </tr>
-        <tr>
-            <td id="le">Carne</td>
-            <td><img src="imagenes/carne.jpeg"></td>
-            <td> Chuleta con salsa de la casa y papas</td>
-            <td>$15.000</td>
-        </tr>
-        <tr>
-            <td id="le">Camarones</td>
-            <td><img src="imagenes/camaron.jpeg"></td>
-            <td> Camarones con salsa de la casa y arroz de coco</td>
-            <td>$25.000</td>
-        </tr>
-    </table>
-
-    <br>
-    <br>
-
-    <p id="menu">Postres</p>
-    <!--Tabla para representar el menu de los postres-->
-    <table id="tablas">
-        <tr>
-            <td id="le">Flan</td>
-            <td><img src="imagenes/flan.jpeg"></td>
-            <td>Flan de huevo con caramelo</td>
-            <td>$10.000</td>
-        </tr>
-        <tr>
-            <td id="le">Tarta</td>
-            <td><img src="imagenes/cake.jpeg"></td>
-            <td>Tarta de frutas con crema</td>
-            <td>$12.000</td>
-        </tr>
-        <tr>
-            <td id="le">Pastel de chocolate</td>
-            <td><img src="imagenes/chocolate.jpeg"></td>
-            <td>Pastel de chocolate con crema </td>
-            <td>$8.000</td>
-        </tr>
-    </table>
-    <br>
-    <br>
-
-    <!--orden de pedido con la seleccion del pedido y la cantidad-->
-    <div id="orden">
-        <p id="ordenTexto"> ¿Qué desea ordenar?</p>
-        <br>
-
-        <label>
-            <input type="checkbox" id="checkboxxx">
-            Caldo de pollo
-            <input type="number" min="0" value="0">
-        </label><br>
-
-        <label>
-            <input type="checkbox" id="checkboxxx">
-            Sopa de pasta
-            <input type="number" min="0" value="0">
-        </label><br>
-
-        <label>
-            <input type="checkbox" id="checkboxxx">
-            Changua
-            <input type="number" min="0" value="0">
-        </label><br>
-
-        <label>
-            <input type="checkbox" id="checkboxxx">
-            Pollo
-            <input type="number" min="0" value="0">
-        </label><br>
-
-        <label>
-            <input type="checkbox" id="checkboxxx">
-            Carne
-            <input type="number" min="0" value="0">
-        </label><br>
-
-        <label>
-            <input type="checkbox" id="checkboxxx">
-            Camarones
-            <input type="number" min="0" value="0">
-        </label><br>
-
-        <label>
-            <input type="checkbox" id="checkboxxx">
-            Flan
-            <input type="number" min="0" value="0">
-        </label><br>
-
-        <label>
-            <input type="checkbox" id="checkboxxx">
-            Tarta
-            <input type="number" min="0" value="0">
-        </label><br>
-
-        <label>
-            <input type="checkbox" id="checkboxxx">
-            Pastel de chocolate
-            <input type="number" min="0" value="0">
-        </label><br>
-
-        <!--boton para validar la compra-->
-        <br>
-        <input type="submit" value="Enviar" id="botonEnviar">
-        <br>
-        <br>
-        <br>
-        <br>
-        <!--total de la compra-->
-        <h2 id="ordenTexto"> Total a pagar: </h2>
-        <p id="ordenTexto">$25000</p>
-    </div>
-
-        <!--acceso al sistema de reservas-->
-    <div id="reservasc">
-        <h2>¿Deseas reservar una mesa con nosotros?</h2>
-        <a href="reservas.html">Reservar</a>
-    </div>
-
-    <!--volver-->
-
+    <!--volver a la seleccion de usuaris-->
     <a href="Restaurante.html">volver</a>
-
 </body>
+<script src="js/funcionesCliente.js"></script>
 
 </html>

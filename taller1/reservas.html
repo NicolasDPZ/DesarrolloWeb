@@ -1,50 +1,61 @@
-<!--Pagina para el sistema de reservas-->
-
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <!--llamado a los estilos con css-->
+    <title>Reservar Mesa</title>
     <link rel="stylesheet" href="css/estilosReserva.css">
 </head>
 
 <body>
-    <div id="Reservas">
-            <!--gestion del sitema de reservas-->
-        <h1>Reservas</h1>
-        <p>Deseas reservar una mesa con nosotros?, llena el siguiente formulario</p>
-        <br>
-        <form action="Reservas.html" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required><br><br>
 
-            <label for="fecha">Fecha de reserva:</label>
-            <input type="date" id="fecha" name="fecha" required><br><br>
+    <div id="reserva">
 
-            <label for="hora">Hora de reserva:</label>
-            <input type="time" id="hora" name="hora" required><br><br>
+        <h1>Reservar Mesa</h1>
 
-            <label for="personas">Número de personas:</label>
-            <input type="number" id="personas" name="personas" min="1" required><br><br>
+        <!-- Número de personas -->
+        <label>Número de personas:</label>
+        <input type="number" id="numPersonas" min="1">
+        <br><br>
+        <div id="contenedorEdades"></div>
 
-            <input type="submit" value="Reservar">
-        </form>
         <br>
-        <br>
-        <br>
+
+        <!-- Tipo de evento -->
+        <label>Tipo de evento:</label>
+        <select id="tipoEvento">
+            <option value="ninguno">Ninguno</option>
+            <option value="cumpleaños">Cumpleaños</option>
+            <option value="trabajo">Evento de trabajo</option>
+            <option value="familiar">Evento familiar</option>
+        </select>
+
+        <br><br>
+
+        <!-- Fecha -->
+        <label>Fecha de reserva:</label>
+        <input type="date" id="fechaReserva">
+
+        <br><br>
+
+        <button id="btnReservar">Reservar</button>
+
+        <p id="mensaje"></p>
+
     </div>
-        <!--Muchos espacios para que se vea lindo djkask-->
-    <br>
-    <br><br><br><br>
     <br><br>
     <br><br>
     <br><br>
-    <br>
-    <br>
-    <br>
-    <!--volver-->
-    <a href="cliente.html">volver</a>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+
+    <a href="cliente.html">Volver</a>
 </body>
+<script src="js/funcionesReservas.js"></script>
 
 </html>
