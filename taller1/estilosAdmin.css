@@ -1,0 +1,14 @@
+body {
+    background-color: #EBD5AB;
+    font-family: Arial, sans-serif;
+}
+
+/*estilos para el administrador restaurante*/
+
+#admin {
+    background-color: lightgreen;
+    padding: 20px;
+    margin: 50px;
+    border: 2px solid green;
+    border-radius: 10px;
+}

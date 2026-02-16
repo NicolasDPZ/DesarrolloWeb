@@ -1,46 +1,7 @@
-/*estilos para el login restaurante*/
-
 body {
     background-color: #EBD5AB;
     font-family: Arial, sans-serif;
 }
-
-#RestauranteXYZ {
-    background-color: beige;
-    padding: 20px;
-    color: rgb(15, 42, 165);
-    text-align: center;
-    margin: 50px;
-    font-size: 50px;
-    border-radius: 10px;
-}
-
-#tipo {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 25px;
-}
-
-#Usuarios {
-
-    margin-top: 20px;
-    text-align: center;
-    font-size: 40px;
-}
-
-#Lista {
-    margin-top: 20px;
-    font-size: 25px;
-    border: 2px solid black;
-    padding: 10px;
-    margin-left: 600px;
-    margin-right: 600px;
-    text-align: center;
-    border-radius: 10px;
-    background-color: beige;
-}
-
-
 
 /*estilos para el cliente restaurante*/
 
@@ -65,6 +26,17 @@ body {
     padding: 20px;
 }
 
+#busqueda {
+    display: block;
+    font-size: 20px;
+    background-color: #f5e6c8;
+    padding: 23px 25px;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: center;
+    border: 2px solid #E67E22;
+    cursor: pointer;
+}
 #menu {
     font-size: 40px;
     text-align: center;
@@ -134,44 +106,3 @@ body {
     border: 2px solid black;
 }
 
-/*estilos para reserva cliente*/
-#Reservas {
-    background-color: rgb(204, 198, 199);
-    padding: 20px;
-    text-align: center;
-    margin: 50px;
-    margin-left: 600px;
-    margin-right: 600px;
-    border: 2px solid rgb(133, 128, 129);
-    border-radius: 10px;
-}
-
-/*estilos para el mesero restaurante*/
-
-#Mesero {
-    background-color: lightblue;
-    padding: 20px;
-    margin: 50px;
-    border: 2px solid blue;
-    border-radius: 10px;
-}
-
-/*estilos para el administrador restaurante*/
-
-#admin {
-    background-color: lightgreen;
-    padding: 20px;
-    margin: 50px;
-    border: 2px solid green;
-    border-radius: 10px;
-}
-
-/*estilos para la cocina restaurante*/
-
-#cocina {
-    background-color: lightcoral;
-    padding: 20px;
-    margin: 50px;
-    border: 2px solid red;
-    border-radius: 10px;
-}

@@ -1,0 +1,13 @@
+body {
+    background-color: #EBD5AB;
+    font-family: Arial, sans-serif;
+}
+/*estilos para la cocina restaurante*/
+
+#cocina {
+    background-color: lightcoral;
+    padding: 20px;
+    margin: 50px;
+    border: 2px solid red;
+    border-radius: 10px;
+}

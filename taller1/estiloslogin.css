@@ -1,0 +1,41 @@
+body {
+    background-color: #EBD5AB;
+    font-family: Arial, sans-serif;
+}
+
+/*estilos para el login restaurante*/
+
+#RestauranteXYZ {
+    background-color: beige;
+    padding: 20px;
+    color: rgb(15, 42, 165);
+    text-align: center;
+    margin: 50px;
+    font-size: 50px;
+    border-radius: 10px;
+}
+
+#tipo {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#Usuarios {
+
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+#Lista {
+    margin-top: 20px;
+    font-size: 25px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-left: 600px;
+    margin-right: 600px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: beige;
+}

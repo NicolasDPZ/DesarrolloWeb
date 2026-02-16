@@ -1,0 +1,19 @@
+body {
+    background-color: #EBD5AB;
+    font-family: Arial, sans-serif;
+}
+
+/*estilos para reserva cliente*/
+#Reservas {
+    background-color: rgb(204, 198, 199);
+    padding: 20px;
+    text-align: center;
+    margin: 50px;
+    margin-left: 600px;
+    margin-right: 600px;
+    border: 2px solid rgb(133, 128, 129);
+    border-radius: 10px;
+}
+
+
+

@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <!--llamado a los estilos con css-->
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilosCliente.css">
 </head>
 
 <body>
@@ -16,6 +16,26 @@
             Menú del día
         </h2>
     </div>
+    <!--busqueda para el cliente-->
+    <div id ="busqueda">
+
+        <p> Desea buscar en el menu</p>
+        <input type="text" id="buscarNombre" placeholder="Buscar el nombre del plato" class="buscar"/>
+        
+        <select id="buscarCategoria" class="buscar">
+            <option value="">Buscar por categoría</option>
+            <option value="sopas">Sopas</option>
+            <option value="platosFuertes">Platos Fuertes</option>
+            <option value="postres">Postres</option>
+            <option value="todas">Todas las categorías</option>
+        </select>
+        
+        <button id="buscarBtn" class="buscar">Buscar</button>
+    </div>
+
+    <div id="resultadosMenu"></div>
+    </div>
+
 
     <p id="menu">Sopas</p>
     <!--Tabla para representar el menu de las sopas-->
